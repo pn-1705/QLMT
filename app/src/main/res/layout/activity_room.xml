@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".RoomActivity">
+
+    <TextView
+        android:id="@+id/nameRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+        android:text="Danh sách máy"
+        tools:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lv_com"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_margin="5dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+            android:text="Thêm"></Button>
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Sửa"></Button>
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Xóa"></Button>
+    </LinearLayout>
+
+</LinearLayout>
